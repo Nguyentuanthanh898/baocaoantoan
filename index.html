@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="vi"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Báo cáo không an toàn</title><link rel="stylesheet" href="style.css"></head>
+<body><div class="w">
+<h1 id="ti"></h1><p class="sub" id="fa"></p>
+<div id="warn" class="msg" hidden></div>
+<div class="card"><h2>Gửi báo cáo mới</h2>
+<div class="seg" id="seg"><button type="button" data-v="Hành vi không an toàn" class="on">Hành vi không an toàn</button><button type="button" data-v="Điều kiện không an toàn">Điều kiện không an toàn</button></div>
+<div class="g" style="margin-top:10px">
+<div><label for="area">Khu vực</label><select id="area"></select></div>
+<div><label for="lv">Mức độ nguy hiểm</label><select id="lv"><option>Thấp</option><option selected>Trung bình</option><option>Cao</option></select></div>
+<div><label for="who">Người báo (không bắt buộc)</label><input id="who" maxlength="60" placeholder="Họ tên hoặc để trống"></div></div>
+<div style="margin-top:10px"><label for="loc">Vị trí cụ thể</label><input id="loc" maxlength="120" placeholder="Ví dụ: cầu trục số 2, cạnh lò"></div>
+<div style="margin-top:10px"><label for="ds">Mô tả điều đã thấy</label><textarea id="ds" maxlength="800" placeholder="Ví dụ: công nhân không đeo kính khi cắt thép"></textarea></div>
+<div style="margin-top:10px"><label for="sg">Đề xuất khắc phục (không bắt buộc)</label><input id="sg" maxlength="200"></div>
+<div style="margin-top:10px"><label for="ph">Ảnh hiện trường (không bắt buộc)</label><input id="ph" type="file" accept="image/*"></div>
+<div class="hp" aria-hidden="true"><label>Để trống<input id="hp" tabindex="-1" autocomplete="off"></label></div>
+<p style="margin:12px 0 0"><button class="btn" id="go">Gửi báo cáo</button> <span class="m" id="st"></span></p></div>
+<div class="card"><h2>Thống kê chung</h2><div class="kp" id="kp"></div><div id="ch"></div></div>
+<p class="m"><a href="admin.html">Trang quản trị</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.117.2/dist/umd/supabase.js"></script>
+<script src="config.js"></script><script src="app.js"></script></body></html>

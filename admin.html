@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="vi"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Quản trị báo cáo</title><link rel="stylesheet" href="style.css"></head>
+<body><div class="w"><h1>Quản trị báo cáo không an toàn</h1><p class="sub"><a href="index.html">Về trang gửi báo cáo</a></p>
+<div class="card" id="lg"><h2>Đăng nhập quản trị</h2><div class="g">
+<div><label for="em">Email</label><input id="em" type="email" autocomplete="username"></div>
+<div><label for="pw">Mật khẩu</label><input id="pw" type="password" autocomplete="current-password"></div></div>
+<p style="margin:12px 0 0"><button class="btn" id="in">Đăng nhập</button> <span class="m" id="ls"></span></p></div>
+<div id="ap" hidden>
+<div class="kp" id="kp"></div>
+<div class="card"><div class="fl"><select id="f1"><option value="">Mọi loại</option><option>Hành vi không an toàn</option><option>Điều kiện không an toàn</option></select>
+<select id="f2"><option value="">Mọi khu vực</option></select>
+<select id="f3"><option value="">Mọi trạng thái</option><option>Mới</option><option>Đang xử lý</option><option>Đã xử lý</option></select>
+<button class="btn s" id="rf">Làm mới</button><button class="btn s" id="csv">Tải CSV</button><button class="btn s" id="out">Đăng xuất</button></div>
+<div id="list"></div></div></div></div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.117.2/dist/umd/supabase.js"></script>
+<script src="config.js"></script><script src="admin.js"></script></body></html>
