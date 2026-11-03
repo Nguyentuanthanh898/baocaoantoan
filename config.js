@@ -4,5 +4,5 @@ window.APP_CONFIG = {
   SUPABASE_ANON_KEY: "sb_publishable_7jtIVU9A7NTfvyOkLI3D3g_py5PryRR",   // khóa publishable được phép công khai; KHÔNG dùng khóa secret hoặc service_role
   TITLE: "Báo cáo hành vi và điều kiện không an toàn",
   FACTORY: "Nhà máy thép",
-  AREAS: ["F1A", "F1", "F2", "F3", "Utility", "XLNT", "Khác"]
+  AREAS: ["Hàn cắt thép", "Máy băm", "Máy ép", "Kho chứa", "Máy nghiền xỉ", "Máy sàn liệu", "Khác"]
 };
